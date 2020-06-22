@@ -5,8 +5,29 @@
 </head>
 <body>
 
+<template id="cat-template">
+  <img :src="`https://cataas.com/cat?width=${width}&random=${random}`" alt="Random cat">
+</template>
+
+<script id="cat-x-template" type="text/x-template">
+  <img :src="`https://cataas.com/cat?width=${width}&random=${random}`" alt="Random cat">
+</script>
+
 <main id="app">
-  <img v-for="i in catsCount" :src="`https://cataas.com/cat?width=300&random=${i}`" alt="Random cat">
+  <h3>vue-cat</h3>
+  <vue-cat></vue-cat>
+  <h3>vue-cat 2</h3>
+  <vue-cat2></vue-cat2>
+  <h3>vue-cat 3</h3>
+  <vue-cat3></vue-cat3>
+  <h3>vue-cat 4</h3>
+  <vue-cat4></vue-cat4>
+  <h3>vue-cat 5</h3>
+  <vue-cat5></vue-cat5>
+  <h3>vue-cat 6</h3>
+  <vue-cat6></vue-cat6>
+  <h3>vue-cat props</h3>
+  <vue-cat-props width="300"></vue-cat-props>
 </main>
 
 <script type="module" src="./script.js"></script>
