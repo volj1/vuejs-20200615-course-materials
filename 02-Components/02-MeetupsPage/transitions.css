@@ -1,0 +1,35 @@
+/* Стили для анимации изменения состояния <transition> с именем fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+.transition-list {
+  position: relative;
+}
+
+.transition-list > * {
+  transition: all 0.3s ease-out;
+}
+
+/* Стили для анимации изменения состояния списка <transition-group> с именем transition-list */
+.transition-list-leave-active {
+  position: absolute !important;
+  left: 0;
+  right: 0;
+}
+
+.transition-list-enter,
+.transition-list-leave-to {
+  opacity: 0;
+}
+
+.transition-list-move {
+  transition: transform 0.3s;
+}
